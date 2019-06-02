@@ -9,7 +9,7 @@ Can be found on telegram as [Monicabot](https://t.me/MsmonicaBot).
 Join the [news channel](https://t.me/aka_NB) if you just want to stay in the loop about new features or
 announcements.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HyperNB/monicatgbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/avatarx0tic/monicatgbot)
 
 
 ## Thanks to
