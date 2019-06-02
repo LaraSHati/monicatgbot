@@ -4,7 +4,7 @@ A modular telegram Python bot running on python3 with an sqlalchemy database.
 Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
 simple to use. 
 
-Can be found on telegram as [Monicabot](https://t.me/MsmonicaBot).
+Can be found on telegram as [Ctrl Bot](https://t.me/ctrln_Bot).
 
 Join the [news channel](https://t.me/aka_NB) if you just want to stay in the loop about new features or
 announcements.
