@@ -6,10 +6,10 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, RegexHandler, run_async, Filters, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from tg_bot import dispatcher, LOGGER
-from tg_bot.modules.helper_funcs.chat_status import user_not_admin, user_admin
-from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import reporting_sql as sql
+from haruka import dispatcher, LOGGER
+from haruka.modules.helper_funcs.chat_status import user_not_admin, user_admin
+from haruka.modules.log_channel import loggable
+from haruka.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 
@@ -61,6 +61,12 @@ def report(bot: Bot, update: Update) -> str:
         chat_name = chat.title or chat.first or chat.username
         admin_list = chat.get_administrators()
 
+        #if reported_user == "483808054":
+        #    continue
+       # 
+        #if user.id == "435606081":
+        #    continue
+
         if chat.username and chat.type == Chat.SUPERGROUP:
             msg = "<b>{}:</b>" \
                   "\n<b>Reported user:</b> {} (<code>{}</code>)" \
@@ -77,15 +83,15 @@ def report(bot: Bot, update: Update) -> str:
 
             should_forward = False
             keyboard = [
-                [InlineKeyboardButton(u"Message", url="https://t.me/{}/{}".format(chat.username, str(
+                [InlineKeyboardButton(u"➡ Message", url="https://t.me/{}/{}".format(chat.username, str(
                     message.reply_to_message.message_id)))],
-                [InlineKeyboardButton(u"Kick",
+                [InlineKeyboardButton(u"✴️ Kick",
                                       callback_data="report_{}=kick={}={}".format(chat.id, reported_user.id,
                                                                                   reported_user.first_name)),
-                 InlineKeyboardButton(u"Ban",
+                 InlineKeyboardButton(u"🚫 Ban",
                                       callback_data="report_{}=banned={}={}".format(chat.id, reported_user.id,
                                                                                     reported_user.first_name))],
-                [InlineKeyboardButton(u"Delete Message",
+                [InlineKeyboardButton(u"❌ Delete Message",
                                       callback_data="report_{}=delete={}={}".format(chat.id, reported_user.id,
                                                                                     message.reply_to_message.message_id))]]
             reply_markup = InlineKeyboardMarkup(keyboard)
@@ -178,7 +184,7 @@ def control_panel_user(bot, update):
         sql.set_user_setting(chat.id, False)
         text = "Disabled reporting in your pm!"
 
-    keyboard = [[InlineKeyboardButton(text="Back", callback_data="cntrl_panel_U(1)")]]
+    keyboard = [[InlineKeyboardButton(text="⬅️ Back", callback_data="cntrl_panel_U(1)")]]
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
 
@@ -243,3 +249,4 @@ dispatcher.add_handler(report_button_user_handler)
 
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
+dispatcher.add_handler(SETTING_HANDLER)
