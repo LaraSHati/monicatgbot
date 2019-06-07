@@ -83,7 +83,7 @@ def report(bot: Bot, update: Update) -> str:
 
             should_forward = False
             keyboard = [
-                [InlineKeyboardButton(u"➡ Message", url="https://t.me/{}/{}".format(chat.username, str(
+                [InlineKeyboardButton(u"👉 Message", url="https://t.me/{}/{}".format(chat.username, str(
                     message.reply_to_message.message_id)))],
                 [InlineKeyboardButton(u"✴️ Kick",
                                       callback_data="report_{}=kick={}={}".format(chat.id, reported_user.id,
