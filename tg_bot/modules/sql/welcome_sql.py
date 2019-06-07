@@ -190,20 +190,20 @@ def set_cmd_joined(chat_id, cmd_joined):
         if not curr:
             curr = Welcome(str(chat_id))
 
-         curr.del_commands = int(cmd_joined)
+        curr.del_commands = int(cmd_joined)
 
-         SESSION.add(curr)
-         SESSION.commit()
+        SESSION.add(curr)
+        SESSION.commit()
 
 
 def get_cmd_pref(chat_id):
     welc = SESSION.query(Welcome).get(str(chat_id))
     SESSION.close()
 
-     if welc:
+    if welc:
         return welc.del_commands
 
-     return False
+    return False
 
 
 def set_welc_preference(chat_id, should_welcome):
