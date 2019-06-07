@@ -184,7 +184,7 @@ def control_panel_user(bot, update):
         sql.set_user_setting(chat.id, False)
         text = "Disabled reporting in your pm!"
 
-    keyboard = [[InlineKeyboardButton(text="⬅️ Back", callback_data="cntrl_panel_U(1)")]]
+    keyboard = [[InlineKeyboardButton(text="Back", callback_data="cntrl_panel_U(1)")]]
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
 
