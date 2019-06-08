@@ -357,10 +357,11 @@ def help_button(bot: Bot, update: Update):
                                          paginate_modules(chat.id, next_page + 1, HELPABLE, "help")))
 
         elif back_match:
-            query.message.reply_text(text=tld(chat.id, "send-help").format("" if not ALLOW_EXCL else tld(chat.id, "\nAll commands can either be used with `/` or `!`.\n")),
+            query.message.reply_text(text=tld(chat.id, "send-help").format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else tld(chat.id, "\nAll commands can either be used with `/` or `!`.\n")),
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
                                          paginate_modules(chat.id, 0, HELPABLE, "help")))
+
 
         # ensure no spinny white circle
         bot.answer_callback_query(query.id)
