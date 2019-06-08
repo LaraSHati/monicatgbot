@@ -4,7 +4,6 @@ from tg_bot.modules.translations.Russian import RussianStrings
 from tg_bot.modules.translations.Ukraine import UkrainianStrings
 from tg_bot.modules.translations.Spanish import SpanishStrings
 
-
 def tld(chat_id, t, show_none=True):
     LANGUAGE = prev_locale(chat_id)
     print(chat_id, t)
@@ -26,7 +25,6 @@ def tld(chat_id, t, show_none=True):
             return EnglishStrings[t]
         else:
             return t
-
 
 
 
