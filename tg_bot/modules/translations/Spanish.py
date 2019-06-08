@@ -734,7 +734,6 @@ Ten en cuenta que las id de grupo suelen ir precedidas del signo `-`; Ese signo 
 no lo borres. \
 Si tienes el humor suficientes puedes tambien poner imágenes/videos/gif/notas de voz como mensaje de bienvenida,\
 respondiendo al mensaje con la imagen/gif/video mediante /setwelcome.
-
 *Solo administradores:*
  - /welcome <on/off>: activa/desactiva los mensajes de bienvenida.
  - /welcome: muestra los ajustes de bienvenida actuales.
