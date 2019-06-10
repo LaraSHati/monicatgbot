@@ -33,9 +33,8 @@ def post_telegraph(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """- /telegra.ph - as reply to a long message + title
-- /telegraph - as a reply to a media less than 5MiB
 """
 __mod_name__ = "Telegraph"
 
-dispatcher.add_handler(DisableAbleCommandHandler("telegra.ph", post_telegraph, pass_args=True))
-dispatcher.add_handler(DisableAbleCommandHandler("telegraph", media_telegraph, filters=Filters.video | Filters.photo))
+dispatcher.add_handler(DisableAbleCommandHandler("telegraph", post_telegraph, pass_args=True))
+dispatcher.add_handler(DisableAbleCommandHandler("telegra.ph", media_telegraph, filters=Filters.video | Filters.photo))
