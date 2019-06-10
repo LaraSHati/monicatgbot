@@ -21,7 +21,7 @@ from tg_bot.modules.translations.strings import tld, tld_help
 from tg_bot.modules.connection import connected
 
 PM_START = """Hi beb {}, My name is {} - I'm here to manage your group and you also you 😎 by -[AVATAR](t.me/refundisillegal)\n\n
-Need any help press.  /help\n _Want to add me to your group?_[Click here](http://t.me/ctrln_bot?startgroup=add)"""
+Need any help press.  /help\n _Want to add me to your group?[Click here](http://t.me/ctrln_bot?startgroup=add)"""
 DONATE_STRING = """wew my beb you wanna donate Clickhere(paypal.me/avatarx0tic) to donate."""
 
 IMPORTED = {}
