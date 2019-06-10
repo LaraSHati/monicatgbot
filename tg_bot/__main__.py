@@ -20,9 +20,9 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 from tg_bot.modules.translations.strings import tld, tld_help 
 from tg_bot.modules.connection import connected
 
-PM_START = """Hi {}, My name is {} - I'm here to help you, manage your group and you also you 😎 by -[AVATAR](t.me/refundisillegal)
-Click Help button to find out more about how to use me to my full potential.  /help                                                                              _Want to add me to your group?_[Click here](http://t.me/ctrln_bot?startgroup=add)"""
-DONATE_STRING = """Nice to Hera that you wanna donate bro Clickhere(paypal.me/avatarx0tic) to donate."""
+PM_START = """Hi beb {}, My name is {} - I'm here to manage your group and you also you 😎 by -[AVATAR](t.me/refundisillegal)\n\n
+Need any help press.  /help\n\n _Want to add me to your group?_[Click here](http://t.me/ctrln_bot?startgroup=add)"""
+DONATE_STRING = """wew my beb you wanna donate Clickhere(paypal.me/avatarx0tic) to donate."""
 
 IMPORTED = {}
 MIGRATEABLE = []
