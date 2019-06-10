@@ -16,6 +16,5 @@ py_translator
 wikipedia
 telegram
 gsearch
-tldextract
 pprint
 telegraph
