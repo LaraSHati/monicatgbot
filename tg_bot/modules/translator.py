@@ -7,8 +7,6 @@ from telegram.ext import Filters, MessageHandler, run_async
 from tg_bot import dispatcher, LOGGER
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
-from py_translator import Translator
-
 
 @run_async
 def do_translate(bot: Bot, update: Update, args: List[str]):
