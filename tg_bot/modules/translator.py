@@ -7,7 +7,7 @@ from telegram.ext import Filters, MessageHandler, run_async
 from tg_bot import dispatcher, LOGGER
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
-
+import googletrans
 
 
 @run_async
