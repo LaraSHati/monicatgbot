@@ -16,4 +16,3 @@ telegram
 gsearch
 pprint
 telegraph
-py_translator
