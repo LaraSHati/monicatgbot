@@ -16,4 +16,4 @@ telegram
 gsearch
 pprint
 telegraph
-py-translator>=2.1.9
+googletrans
