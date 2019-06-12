@@ -22,7 +22,7 @@ from tg_bot.modules.connection import connected
 
 PM_START = """Hi {}, My name is {} - I'm here to help you manage your groups!
 
-I'm a modular group management bot maintained by [this wonderful person](https://t.me/Muttahir)! Have a look at the following for an idea of some of the things I can help you with.
+I'm a modular group management bot maintained by [this wonderful person](https://t.me/LaraSH_ati)! Have a look at the following for an idea of some of the things I can help you with.
 
 I'm a group manager bot . I'm built in python3, using the python-telegram-bot library,
 
