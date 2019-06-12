@@ -22,14 +22,14 @@ from tg_bot.modules.connection import connected
 
 PM_START = """Hi {}, My name is {} - I'm here to help you manage your groups!
 
-I'm a modular group management bot maintained by [this wonderful person](https://t.me/Muttahir)! Have a look at the following for an idea of some of the things I can help you with.
+I'm a modular group management bot maintained by [this wonderful person](https://t.me/LaraSHati)! Have a look at the following for an idea of some of the things I can help you with.
 
 I'm a group manager bot . I'm built in python3, using the python-telegram-bot library,
 
 Click Help button or use /help to find out more about how to use me to my full potential.\n\nWant to add me to your group? [Click here!](t.me/Monicarobot?startgroup=true)"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/Muttahir) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/LaraSHati) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me \. 
 https://orangefox.tech/donate."""
 
